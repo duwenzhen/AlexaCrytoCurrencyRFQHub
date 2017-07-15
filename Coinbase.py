@@ -2,8 +2,8 @@ from coinbase.wallet.client import Client
 import urllib2
 
 import json
-key = "5phviZA2qe5X0tqq"
-secret = "lvdVQrj9QsmkkwTT7y14Hqd8vhKUCsR4"
+key = ""
+secret = "" #put you key and secret,this one is deleted
 client = Client(key, secret)
 
 
