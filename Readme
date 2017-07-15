@@ -1,0 +1,84 @@
+https://developer.amazon.com/edw/home.html#/
+Intent Schema:
+
+
+ {
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "currency",
+          "type": "CRYPTO_CURRENCY"
+        }
+      ],
+      "intent": "RFQIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "currency",
+          "type": "CRYPTO_CURRENCY"
+        },
+        {
+          "name": "way",
+          "type": "ORDER_WAY"
+        }
+      ],
+      "intent": "ConseilIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "currency",
+          "type": "CRYPTO_CURRENCY"
+        },
+        {
+          "name": "way",
+          "type": "ORDER_WAY"
+        },
+        {
+          "name": "quantity",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "PriceForGivenSizeIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "currency",
+          "type": "CRYPTO_CURRENCY"
+        },
+        {
+          "name": "way",
+          "type": "ORDER_WAY"
+        },
+        {
+          "name": "quantity",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "OrderIntent"
+    },
+    {
+      "intent": "EndSessionIntent"
+    }
+  ]
+}
+
+Custom Slot Types (Optional)
+
+Type 	Values 	
+CRYPTO_CURRENCY 	bitcoin | ethereum 	
+ORDER_WAY 	buy | sell
+
+Sample Utterances
+
+RFQIntent Can you please give the price for {currency}
+ConseilIntent Do you think it's the good time to {way} {currency}
+PriceForGivenSizeIntent what is the price if I want to {way} {quantity} {currency}
+OrderIntent {way} {quantity} {currency}
+EndSessionIntent Thank you
+EndSessionIntent Bye
+EndSessionIntent Good bye
+EndSessionIntent Thanks
