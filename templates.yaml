@@ -1,0 +1,13 @@
+welcome: Welcome to crypto currency RFQ hub, what can I do for you?
+
+Cannothelp: Sorry, I can not help you.
+
+RFQ: The price of {{ccy}} is {{price}}, what can I do for you?
+
+ConseilLeadLagGoodtime: Yep, according to my lead lag analysis with other crypto currencies, it's the good time to {{way}} {{currency}}
+
+ConseilLeadLagBadtime: Nop, according to my lead lag analysis with other crypto currencies, it's not the good time to {{way}} {{currency}}
+
+Done: Done, {{way}} {{qty}} {{currency}}
+
+PriceForGivenSize: Ok, {{way}} {{qty}} {{currency}} will cost you {{price}} per {{currency}}, do you want to do it?
